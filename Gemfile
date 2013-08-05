@@ -30,6 +30,28 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+group :assets do
+  gem 'therubyracer', platforms: :ruby
+end
+
+gem 'haml'
+gem 'haml-rails'
+gem 'formtastic'
+gem 'formtastic-bootstrap'
+gem 'mongoid',  github: 'mongoid/mongoid'
+gem 'bson_ext'
+gem 'twitter-bootstrap-rails', '~> 2.2.7'
+
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+end
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
