@@ -16,3 +16,4 @@
 /tmp
 Vagrantfile
 .vagrant
+config/mongoid.yml
